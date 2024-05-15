@@ -128,8 +128,7 @@ function UserSessions({ isDelegate, selfDelegate }: UserSessionsProps) {
               }`}
               onClick={() =>
                 router.push(path + "?active=sessions&session=schedule")
-              }
-            >
+              }>
               Schedule
             </button>
           )}
@@ -143,8 +142,7 @@ function UserSessions({ isDelegate, selfDelegate }: UserSessionsProps) {
               }`}
               onClick={() =>
                 router.push(path + "?active=sessions&session=book")
-              }
-            >
+              }>
               Booked
             </button>
           )}
@@ -156,8 +154,7 @@ function UserSessions({ isDelegate, selfDelegate }: UserSessionsProps) {
             }`}
             onClick={() =>
               router.push(path + "?active=sessions&session=attending")
-            }
-          >
+            }>
             Attending
           </button>
           {selfDelegate === true && (
@@ -169,8 +166,7 @@ function UserSessions({ isDelegate, selfDelegate }: UserSessionsProps) {
               }`}
               onClick={() =>
                 router.push(path + "?active=sessions&session=hosted")
-              }
-            >
+              }>
               Hosted
             </button>
           )}
@@ -182,8 +178,7 @@ function UserSessions({ isDelegate, selfDelegate }: UserSessionsProps) {
             }`}
             onClick={() =>
               router.push(path + "?active=sessions&session=attended")
-            }
-          >
+            }>
             Attended
           </button>
         </div>

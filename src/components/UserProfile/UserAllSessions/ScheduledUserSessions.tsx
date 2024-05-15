@@ -287,8 +287,7 @@ function ScheduledUserSessions() {
     <>
       <div
         style={{ boxShadow: "0px 4px 50.8px 0px rgba(0, 0, 0, 0.11)" }}
-        className="max-w-lg mx-auto mt-2 p-8 bg-white rounded-2xl"
-      >
+        className="max-w-lg mx-auto mt-2 p-8 bg-white rounded-2xl">
         <div className="mb-4">
           <label className="text-gray-700 font-semibold flex items-center">
             Select DAO Name:
@@ -303,8 +302,7 @@ function ScheduledUserSessions() {
               }
               placement="right"
               className="rounded-md bg-opacity-90"
-              closeDelay={1}
-            >
+              closeDelay={1}>
               <span className="px-2 justify-end">
                 <FaCircleInfo className="cursor-pointer" />
               </span>
@@ -313,8 +311,7 @@ function ScheduledUserSessions() {
           <div
             // value={daoName}
             // onChange={(e) => setDaoName(e.target.value)}
-            className="border border-gray-300 rounded px-3 py-2 mt-1 w-full capitalize"
-          >
+            className="border border-gray-300 rounded px-3 py-2 mt-1 w-full capitalize">
             {daoName}
             {/* <option value="optimism">Optimism</option>
             <option value="arbitrum">Arbitrum</option> */}
@@ -336,8 +333,7 @@ function ScheduledUserSessions() {
               }
               placement="right"
               className="rounded-md bg-opacity-90"
-              closeDelay={1}
-            >
+              closeDelay={1}>
               <span className="px-2 justify-end">
                 <FaCircleInfo className="cursor-pointer" />
               </span>
@@ -346,8 +342,7 @@ function ScheduledUserSessions() {
           <select
             value={timeSlotSizeMinutes}
             onChange={(e) => setTimeSlotSizeMinutes(Number(e.target.value))}
-            className="border border-gray-300 rounded px-3 py-2 mt-1 w-full"
-          >
+            className="border border-gray-300 rounded px-3 py-2 mt-1 w-full">
             <option value={15}>15 minutes</option>
             <option value={30}>30 minutes</option>
             <option value={45}>45 minutes</option>
@@ -366,8 +361,7 @@ function ScheduledUserSessions() {
               }
               placement="right"
               className="rounded-md bg-opacity-90"
-              closeDelay={1}
-            >
+              closeDelay={1}>
               <span className="px-2 justify-end">
                 <FaCircleInfo className="cursor-pointer" />
               </span>
@@ -395,8 +389,7 @@ function ScheduledUserSessions() {
                 }
                 placement="right"
                 className="rounded-md bg-opacity-90"
-                closeDelay={1}
-              >
+                closeDelay={1}>
                 <span className="px-2 justify-end">
                   <FaCircleInfo className="cursor-pointer" />
                 </span>
@@ -409,8 +402,7 @@ function ScheduledUserSessions() {
               <select
                 className="border border-gray-300 rounded px-3 py-2 mt-1 w-full"
                 value={selectedStartTime}
-                onChange={(e) => handleStartTimeChange(e)}
-              >
+                onChange={(e) => handleStartTimeChange(e)}>
                 {startTimeOptions.map((time) => (
                   <option key={time} value={time}>
                     {time}
@@ -423,8 +415,7 @@ function ScheduledUserSessions() {
               <select
                 className="border border-gray-300 rounded px-3 py-2 mt-1 w-full"
                 value={selectedEndTime}
-                onChange={(e) => handleEndTimeChange(e)}
-              >
+                onChange={(e) => handleEndTimeChange(e)}>
                 {endTimeOptions.map((time) => (
                   <option key={time} value={time}>
                     {time}
@@ -437,8 +428,7 @@ function ScheduledUserSessions() {
 
         <button
           onClick={handleAddSelectedDate}
-          className="bg-blue-shade-100 hover:bg-blue-shade-200 text-white font-bold py-2 px-4 rounded"
-        >
+          className="bg-blue-shade-100 hover:bg-blue-shade-200 text-white font-bold py-2 px-4 rounded">
           Add Session
         </button>
 
@@ -459,8 +449,7 @@ function ScheduledUserSessions() {
                   .join(", ")}
                 <button
                   onClick={() => handleRemoveDate(item.date)}
-                  className="text-red-600 ml-2"
-                >
+                  className="text-red-600 ml-2">
                   Remove
                 </button>
               </li>
@@ -471,8 +460,7 @@ function ScheduledUserSessions() {
         <button
           onClick={() => handleApplyWithCheck()}
           className="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mt-4 w-[160px]"
-          disabled={createSessionLoading}
-        >
+          disabled={createSessionLoading}>
           {createSessionLoading ? (
             <div className="flex items-center justify-center">
               <Oval

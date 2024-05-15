@@ -653,8 +653,7 @@ function MainProfile() {
                 style={{
                   backgroundColor: "#fcfcfc",
                   border: "2px solid #E9E9E9 ",
-                }}
-              >
+                }}>
                 <div className="w-40 h-40 flex items-center justify-content ">
                   <div className="flex justify-center items-center w-40 h-40">
                     <Image
@@ -714,8 +713,7 @@ function MainProfile() {
                         twitter == "" ? "hidden" : ""
                       }`}
                       style={{ backgroundColor: "rgba(217, 217, 217, 0.42)" }}
-                      target="_blank"
-                    >
+                      target="_blank">
                       <FaXTwitter color="#7C7C7C" size={12} />
                     </Link>
                     <Link
@@ -730,8 +728,7 @@ function MainProfile() {
                         discourse == "" ? "hidden" : ""
                       }`}
                       style={{ backgroundColor: "rgba(217, 217, 217, 0.42)" }}
-                      target="_blank"
-                    >
+                      target="_blank">
                       <BiSolidMessageRoundedDetail color="#7C7C7C" size={12} />
                     </Link>
                     <Link
@@ -740,8 +737,7 @@ function MainProfile() {
                         discord == "" ? "hidden" : ""
                       }`}
                       style={{ backgroundColor: "rgba(217, 217, 217, 0.42)" }}
-                      target="_blank"
-                    >
+                      target="_blank">
                       <FaDiscord color="#7C7C7C" size={12} />
                     </Link>
                     <Link
@@ -750,28 +746,24 @@ function MainProfile() {
                         github == "" ? "hidden" : ""
                       }`}
                       style={{ backgroundColor: "rgba(217, 217, 217, 0.42)" }}
-                      target="_blank"
-                    >
+                      target="_blank">
                       <FaGithub color="#7C7C7C" size={12} />
                     </Link>
                     <Tooltip
                       content="Update your Profile"
                       placement="right"
-                      showArrow
-                    >
+                      showArrow>
                       <span
                         className="border-[0.5px] border-[#8E8E8E] rounded-full h-fit p-1 cursor-pointer"
                         style={{ backgroundColor: "rgba(217, 217, 217, 0.42)" }}
-                        onClick={onOpen}
-                      >
+                        onClick={onOpen}>
                         <FaPencil color="#3e3d3d" size={12} />
                       </span>
                     </Tooltip>
                     <Modal
                       isOpen={isOpen}
                       onOpenChange={onOpenChange}
-                      className="font-poppins"
-                    >
+                      className="font-poppins">
                       <ModalContent>
                         {(onClose: any) => (
                           <>
@@ -865,8 +857,7 @@ function MainProfile() {
                               </Button>
                               <Button
                                 color="primary"
-                                onClick={() => handleSubmit()}
-                              >
+                                onClick={() => handleSubmit()}>
                                 {isLoading ? "Saving" : "Save"}
                               </Button>
                             </ModalFooter>
@@ -887,8 +878,7 @@ function MainProfile() {
                     content="Copy"
                     placement="right"
                     closeDelay={1}
-                    showArrow
-                  >
+                    showArrow>
                     <span className="px-2 cursor-pointer" color="#3E3D3D">
                       <IoCopy onClick={() => handleCopy(`${address}`)} />
                     </span>
@@ -943,8 +933,7 @@ function MainProfile() {
                     {/* pass address of whom you want to delegate the voting power to */}
                     <button
                       className="bg-blue-shade-200 font-bold text-white rounded-full px-8 py-[10px]"
-                      onClick={() => handleDelegateVotes(`${address}`)}
-                    >
+                      onClick={() => handleDelegateVotes(`${address}`)}>
                       Become Delegate
                     </button>
                     {/*
@@ -977,8 +966,7 @@ function MainProfile() {
                   ? "text-blue-shade-200 font-semibold border-b-2 border-blue-shade-200"
                   : "border-transparent"
               }`}
-              onClick={() => router.push(path + "?active=info")}
-            >
+              onClick={() => router.push(path + "?active=info")}>
               Info
             </button>
             {selfDelegate === true && (
@@ -988,8 +976,7 @@ function MainProfile() {
                     ? "text-blue-shade-200 font-semibold border-b-2 border-blue-shade-200"
                     : "border-transparent"
                 }`}
-                onClick={() => router.push(path + "?active=votes")}
-              >
+                onClick={() => router.push(path + "?active=votes")}>
                 Past Votes
               </button>
             )}
@@ -1001,8 +988,7 @@ function MainProfile() {
               }`}
               onClick={() =>
                 router.push(path + "?active=sessions&session=schedule")
-              }
-            >
+              }>
               Sessions
             </button>
             <button
@@ -1013,8 +999,7 @@ function MainProfile() {
               }`}
               onClick={() =>
                 router.push(path + "?active=officeHours&hours=schedule")
-              }
-            >
+              }>
               Office Hours
             </button>
 
@@ -1025,8 +1010,7 @@ function MainProfile() {
                     ? "text-blue-shade-200 font-semibold border-b-2 border-blue-shade-200"
                     : "border-transparent"
                 }`}
-                onClick={() => router.push(path + "?active=instant-meet")}
-              >
+                onClick={() => router.push(path + "?active=instant-meet")}>
                 Instant Meet
               </button>
             )}
